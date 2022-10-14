@@ -1,0 +1,122 @@
+#sacar la el dia, mes y año de hoy
+from datetime import datetime
+hoy = datetime.now()
+## de hoy
+dia_actual=hoy.day
+mes_actual=hoy.month
+año_actual=hoy.year
+#entrdas
+fecha_nacimiento=input("poner en formato dd/mm/yy: ")
+(dia,mes,año)=fecha_nacimiento.split("/")
+dia_nacimiento=int(dia)
+mes_nacimiento=int(mes)
+año_nacimiento=int(año)
+#caj negra
+#------------------calcular edad--------
+edad=(año_actual-año_nacimiento)
+if(mes_actual>mes_nacimiento):
+    edad=año_actual-año_nacimiento
+elif(mes_actual<mes_nacimiento):
+    edad=(año_actual-año_nacimiento)-1
+    if(dia_actual>dia_nacimiento):
+        edad=año_actual-año_nacimiento
+    elif(dia_actual<dia_nacimiento):
+        edad=(año_actual-año_nacimiento)-1
+print("Su edad es: ", edad)
+#---------------------mostrar signo-------
+if(mes_nacimiento==1):
+    if(dia_nacimiento>=20):
+        print("Acuario")
+else:
+    if(mes_nacimiento==2):
+        if(dia_nacimiento<=19):
+            print("Acuario")
+    else:
+        if(mes_nacimiento==2):
+            if(dia_nacimiento>=20):
+                print("Piscis")
+        else:
+            if(mes_nacimiento==3):
+                if(dia_nacimiento<=19):
+                    print("Piscis")
+            else:
+                if(mes_nacimiento==3):
+                    if(dia_nacimiento>=20):
+                        print("Aries")
+                else:
+                    if(mes_nacimiento==4):
+                        if(dia_nacimiento<=19):
+                            print("Aries")
+                    else:
+                        if(mes_nacimiento==4):
+                            if(dia_nacimiento>=20):
+                                print("Tauro")
+                        else:
+                            if(mes_nacimiento==5):
+                                if(dia_nacimiento<=20):
+                                    print("Tauro")
+                            else:
+                                if(mes_nacimiento==5):
+                                    if(dia_nacimiento>=21):
+                                        print("Geminis")
+                                else:
+                                    if(mes_nacimiento==6):
+                                        if(dia_nacimiento<=20):
+                                            print("Geminis")
+                                    else:
+                                        if(mes_nacimiento==6):
+                                            if(dia_nacimiento>=21):
+                                                print("Cancer")
+                                        else:
+                                            if(mes_nacimiento==7):
+                                                if(dia_nacimiento<=21):
+                                                    print("Cancer")
+                                            else:
+                                                if(mes_nacimiento==7):
+                                                    if(dia_nacimiento>=22):
+                                                        print("Leo")
+                                                else:
+                                                    if(mes_nacimiento==8):
+                                                        if(dia_nacimiento<=22):
+                                                            print("Leo")
+                                                    else:
+                                                        if(mes_nacimiento==8):
+                                                            if(dia_nacimiento>=23):
+                                                                print("Virgo")
+                                                        else:
+                                                            if(mes_nacimiento==9):
+                                                                if(dia_nacimiento<=21):
+                                                                    print("Virgo")
+                                                            else:
+                                                                if(mes_nacimiento==9):
+                                                                    if(dia_nacimiento>=22):
+                                                                        print("Libra")
+                                                                else:
+                                                                    if(mes_nacimiento==10):
+                                                                        if(dia_nacimiento<=21):
+                                                                            print("Libra")
+                                                                    else:
+                                                                        if(mes_nacimiento==10):
+                                                                            if(dia_nacimiento>=22):
+                                                                                print("Escorpio")
+                                                                        else:
+                                                                            if(mes_nacimiento==11):
+                                                                                if(dia_nacimiento<=20):
+                                                                                    print("Escorpio")
+                                                                            else:
+                                                                                if(mes_nacimiento==11):
+                                                                                    if(dia_nacimiento>=21):
+                                                                                        print("Sagitario")
+                                                                                else:
+                                                                                    if(mes_nacimiento==12):
+                                                                                        if(dia_nacimiento<=20):
+                                                                                            print("Sagitario")
+                                                                                    else:
+                                                                                        if(mes_nacimiento==12):
+                                                                                            if(dia_nacimiento>=21):
+                                                                                                print("Capricornio")
+                                                                                        else:
+                                                                                            if(mes_nacimiento==1):
+                                                                                                if(dia_nacimiento<=19):
+                                                                                                    print("Capricornio")
+
